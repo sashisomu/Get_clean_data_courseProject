@@ -1,0 +1,749 @@
+Code BooK Part 1:
+
+for tidy data set created as per requirement of part 5 of the course project
+
+Tidy data set colleced from Samsung Gelaxy mobile contains 10299 observations made by 30 volunteers by performing 6 different activities. Data set has 89 columns. It has following features  
+
+Units - All features generated from measurements except first 3 are normalized and have values varying from -1 to 1. And are represented in non dimensional parameters which do not have any units
+
+activity: Its decription of activity during which data is 	collected. It has 6 descriptions
+
+	1. WALKING
+	2. WALKING_UPSTAIRS
+	3. WALKING_DOWNSTAIRS
+	4. SITTING
+	5. STANDING
+	6. LAYING
+
+
+activityCode: Code of activity
+
+	1: WALKING
+	2: WALKING_UPSTAIRS
+	3: WALKING_DOWNSTAIRS
+	4: SITTING
+	5: STANDING
+	6: LAYING
+
+subject: Number assigned to volunteers
+
+1: Observations made by Mr./Ms. X
+2: Observations made by Mr/Ms. Y
+3: Observations made by Mr/Ms. Z
+.
+.
+.
+30:Observations made by Mr/Ms. D1
+
+
+Features from 4 to 89:
+
+The features in this database are transformed from the measurements of accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals prefix 't' to denote time an 'f' to denote frequency domain.
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+1.tBodyAccXYZ
+2.tGravityAccXYZ
+3.tBodyAccJerkXYZ
+4.tBodyGyroXYZ
+5.tBodyGyroJerkXYZ
+6.tBodyAccMag
+7.tGravityAccMag
+8.tBodyAccJerkMag
+9.tBodyGyroMag
+10.tBodyGyroJerkMag
+11.fBodyAccXYZ
+12.fBodyAccmeanFreqXYZ
+13.fBodyAccJerkmeanFreqXYZ
+14.fBodyAccJerkXYZ
+15.fBodyGyroXYZ
+16.fBodyGyromeanFreqXYZ
+17.fBodyAccMag
+18.fBodyAccMagmeanFreq
+19.fBodyAccJerkMag
+20.fBodyBodyAccJerkMagmeanFreq
+21.fBodyGyroMag
+22.fBodyBodyGyroMagmeanFreq
+23.fBodyGyroJerkMag
+24:fBodyBodyGyroJerkMagmeanFreq
+25:angletBodyAccMeangravity:
+26:angletBodyAccJerkMeangravityMean:
+27:angletBodyGyroMeangravityMean:
+28:angletBodyGyroJerkMeangravityMean:
+29:angleXgravityMean:
+30:angleYgravityMean:
+31:angleZgravityMean:
+
+
+
+Code BooK Part 2:
+
+for tidy data set created as per requirement of part 1 of the course project
+
+Tidy data set colleced from Samsung Gelaxy mobile contains 10299 observations made by 30 volunteers by performing 6 different activities. Data set has 564 columns. It has following features  
+
+Units - All features generated from measurements except first 3 are normalized and have values varying from -1 to 1. And are represented in non dimensional parameters which do not have any units
+
+activity: Its decription of activity during which data is 	collected. It has 6 descriptions
+
+	1. WALKING
+	2. WALKING_UPSTAIRS
+	3. WALKING_DOWNSTAIRS
+	4. SITTING
+	5. STANDING
+	6. LAYING
+
+
+activityCode: Code of activity
+
+	1: WALKING
+	2: WALKING_UPSTAIRS
+	3: WALKING_DOWNSTAIRS
+	4: SITTING
+	5: STANDING
+	6: LAYING
+
+subject: Number assigned to volunteers
+
+1: Observations made by Mr./Ms. X
+2: Observations made by Mr/Ms. Y
+3: Observations made by Mr/Ms. Z
+.
+.
+.
+30:Observations made by Mr/Ms. D1
+
+
+Feature from 4 to 564
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAccXYZ and tGyroXYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerkXYZ and tBodyGyroJerkXYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAccXYZ, fBodyAccJerkXYZ, fBodyGyroXYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAccXYZ
+tGravityAccXYZ
+tBodyAccJerkXYZ
+tBodyGyroXYZ
+tBodyGyroJerkXYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAccXYZ
+fBodyAccJerkXYZ
+fBodyGyroXYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+The complete list of variables of each feature vector is available below
+
+1	activity
+2	activityCode
+3	subject
+4	tBodyAccmeanX
+5	tBodyAccmeanY
+6	tBodyAccmeanZ
+7	tBodyAccstdX
+8	tBodyAccstdY
+9	tBodyAccstdZ
+10	tBodyAccmadX
+11	tBodyAccmadY
+12	tBodyAccmadZ
+13	tBodyAccmaxX
+14	tBodyAccmaxY
+15	tBodyAccmaxZ
+16	tBodyAccminX
+17	tBodyAccminY
+18	tBodyAccminZ
+19	tBodyAccsma
+20	tBodyAccenergyX
+21	tBodyAccenergyY
+22	tBodyAccenergyZ
+23	tBodyAcciqrX
+24	tBodyAcciqrY
+25	tBodyAcciqrZ
+26	tBodyAccentropyX
+27	tBodyAccentropyY
+28	tBodyAccentropyZ
+29	tBodyAccarCoeffX1
+30	tBodyAccarCoeffX2
+31	tBodyAccarCoeffX3
+32	tBodyAccarCoeffX4
+33	tBodyAccarCoeffY1
+34	tBodyAccarCoeffY2
+35	tBodyAccarCoeffY3
+36	tBodyAccarCoeffY4
+37	tBodyAccarCoeffZ1
+38	tBodyAccarCoeffZ2
+39	tBodyAccarCoeffZ3
+40	tBodyAccarCoeffZ4
+41	tBodyAcccorrelationXY
+42	tBodyAcccorrelationXZ
+43	tBodyAcccorrelationYZ
+44	tGravityAccmeanX
+45	tGravityAccmeanY
+46	tGravityAccmeanZ
+47	tGravityAccstdX
+48	tGravityAccstdY
+49	tGravityAccstdZ
+50	tGravityAccmadX
+51	tGravityAccmadY
+52	tGravityAccmadZ
+53	tGravityAccmaxX
+54	tGravityAccmaxY
+55	tGravityAccmaxZ
+56	tGravityAccminX
+57	tGravityAccminY
+58	tGravityAccminZ
+59	tGravityAccsma
+60	tGravityAccenergyX
+61	tGravityAccenergyY
+62	tGravityAccenergyZ
+63	tGravityAcciqrX
+64	tGravityAcciqrY
+65	tGravityAcciqrZ
+66	tGravityAccentropyX
+67	tGravityAccentropyY
+68	tGravityAccentropyZ
+69	tGravityAccarCoeffX1
+70	tGravityAccarCoeffX2
+71	tGravityAccarCoeffX3
+72	tGravityAccarCoeffX4
+73	tGravityAccarCoeffY1
+74	tGravityAccarCoeffY2
+75	tGravityAccarCoeffY3
+76	tGravityAccarCoeffY4
+77	tGravityAccarCoeffZ1
+78	tGravityAccarCoeffZ2
+79	tGravityAccarCoeffZ3
+80	tGravityAccarCoeffZ4
+81	tGravityAcccorrelationXY
+82	tGravityAcccorrelationXZ
+83	tGravityAcccorrelationYZ
+84	tBodyAccJerkmeanX
+85	tBodyAccJerkmeanY
+86	tBodyAccJerkmeanZ
+87	tBodyAccJerkstdX
+88	tBodyAccJerkstdY
+89	tBodyAccJerkstdZ
+90	tBodyAccJerkmadX
+91	tBodyAccJerkmadY
+92	tBodyAccJerkmadZ
+93	tBodyAccJerkmaxX
+94	tBodyAccJerkmaxY
+95	tBodyAccJerkmaxZ
+96	tBodyAccJerkminX
+97	tBodyAccJerkminY
+98	tBodyAccJerkminZ
+99	tBodyAccJerksma
+100	tBodyAccJerkenergyX
+101	tBodyAccJerkenergyY
+102	tBodyAccJerkenergyZ
+103	tBodyAccJerkiqrX
+104	tBodyAccJerkiqrY
+105	tBodyAccJerkiqrZ
+106	tBodyAccJerkentropyX
+107	tBodyAccJerkentropyY
+108	tBodyAccJerkentropyZ
+109	tBodyAccJerkarCoeffX1
+110	tBodyAccJerkarCoeffX2
+111	tBodyAccJerkarCoeffX3
+112	tBodyAccJerkarCoeffX4
+113	tBodyAccJerkarCoeffY1
+114	tBodyAccJerkarCoeffY2
+115	tBodyAccJerkarCoeffY3
+116	tBodyAccJerkarCoeffY4
+117	tBodyAccJerkarCoeffZ1
+118	tBodyAccJerkarCoeffZ2
+119	tBodyAccJerkarCoeffZ3
+120	tBodyAccJerkarCoeffZ4
+121	tBodyAccJerkcorrelationXY
+122	tBodyAccJerkcorrelationXZ
+123	tBodyAccJerkcorrelationYZ
+124	tBodyGyromeanX
+125	tBodyGyromeanY
+126	tBodyGyromeanZ
+127	tBodyGyrostdX
+128	tBodyGyrostdY
+129	tBodyGyrostdZ
+130	tBodyGyromadX
+131	tBodyGyromadY
+132	tBodyGyromadZ
+133	tBodyGyromaxX
+134	tBodyGyromaxY
+135	tBodyGyromaxZ
+136	tBodyGyrominX
+137	tBodyGyrominY
+138	tBodyGyrominZ
+139	tBodyGyrosma
+140	tBodyGyroenergyX
+141	tBodyGyroenergyY
+142	tBodyGyroenergyZ
+143	tBodyGyroiqrX
+144	tBodyGyroiqrY
+145	tBodyGyroiqrZ
+146	tBodyGyroentropyX
+147	tBodyGyroentropyY
+148	tBodyGyroentropyZ
+149	tBodyGyroarCoeffX1
+150	tBodyGyroarCoeffX2
+151	tBodyGyroarCoeffX3
+152	tBodyGyroarCoeffX4
+153	tBodyGyroarCoeffY1
+154	tBodyGyroarCoeffY2
+155	tBodyGyroarCoeffY3
+156	tBodyGyroarCoeffY4
+157	tBodyGyroarCoeffZ1
+158	tBodyGyroarCoeffZ2
+159	tBodyGyroarCoeffZ3
+160	tBodyGyroarCoeffZ4
+161	tBodyGyrocorrelationXY
+162	tBodyGyrocorrelationXZ
+163	tBodyGyrocorrelationYZ
+164	tBodyGyroJerkmeanX
+165	tBodyGyroJerkmeanY
+166	tBodyGyroJerkmeanZ
+167	tBodyGyroJerkstdX
+168	tBodyGyroJerkstdY
+169	tBodyGyroJerkstdZ
+170	tBodyGyroJerkmadX
+171	tBodyGyroJerkmadY
+172	tBodyGyroJerkmadZ
+173	tBodyGyroJerkmaxX
+174	tBodyGyroJerkmaxY
+175	tBodyGyroJerkmaxZ
+176	tBodyGyroJerkminX
+177	tBodyGyroJerkminY
+178	tBodyGyroJerkminZ
+179	tBodyGyroJerksma
+180	tBodyGyroJerkenergyX
+181	tBodyGyroJerkenergyY
+182	tBodyGyroJerkenergyZ
+183	tBodyGyroJerkiqrX
+184	tBodyGyroJerkiqrY
+185	tBodyGyroJerkiqrZ
+186	tBodyGyroJerkentropyX
+187	tBodyGyroJerkentropyY
+188	tBodyGyroJerkentropyZ
+189	tBodyGyroJerkarCoeffX1
+190	tBodyGyroJerkarCoeffX2
+191	tBodyGyroJerkarCoeffX3
+192	tBodyGyroJerkarCoeffX4
+193	tBodyGyroJerkarCoeffY1
+194	tBodyGyroJerkarCoeffY2
+195	tBodyGyroJerkarCoeffY3
+196	tBodyGyroJerkarCoeffY4
+197	tBodyGyroJerkarCoeffZ1
+198	tBodyGyroJerkarCoeffZ2
+199	tBodyGyroJerkarCoeffZ3
+200	tBodyGyroJerkarCoeffZ4
+201	tBodyGyroJerkcorrelationXY
+202	tBodyGyroJerkcorrelationXZ
+203	tBodyGyroJerkcorrelationYZ
+204	tBodyAccMagmean
+205	tBodyAccMagstd
+206	tBodyAccMagmad
+207	tBodyAccMagmax
+208	tBodyAccMagmin
+209	tBodyAccMagsma
+210	tBodyAccMagenergy
+211	tBodyAccMagiqr
+212	tBodyAccMagentropy
+213	tBodyAccMagarCoeff1
+214	tBodyAccMagarCoeff2
+215	tBodyAccMagarCoeff3
+216	tBodyAccMagarCoeff4
+217	tGravityAccMagmean
+218	tGravityAccMagstd
+219	tGravityAccMagmad
+220	tGravityAccMagmax
+221	tGravityAccMagmin
+222	tGravityAccMagsma
+223	tGravityAccMagenergy
+224	tGravityAccMagiqr
+225	tGravityAccMagentropy
+226	tGravityAccMagarCoeff1
+227	tGravityAccMagarCoeff2
+228	tGravityAccMagarCoeff3
+229	tGravityAccMagarCoeff4
+230	tBodyAccJerkMagmean
+231	tBodyAccJerkMagstd
+232	tBodyAccJerkMagmad
+233	tBodyAccJerkMagmax
+234	tBodyAccJerkMagmin
+235	tBodyAccJerkMagsma
+236	tBodyAccJerkMagenergy
+237	tBodyAccJerkMagiqr
+238	tBodyAccJerkMagentropy
+239	tBodyAccJerkMagarCoeff1
+240	tBodyAccJerkMagarCoeff2
+241	tBodyAccJerkMagarCoeff3
+242	tBodyAccJerkMagarCoeff4
+243	tBodyGyroMagmean
+244	tBodyGyroMagstd
+245	tBodyGyroMagmad
+246	tBodyGyroMagmax
+247	tBodyGyroMagmin
+248	tBodyGyroMagsma
+249	tBodyGyroMagenergy
+250	tBodyGyroMagiqr
+251	tBodyGyroMagentropy
+252	tBodyGyroMagarCoeff1
+253	tBodyGyroMagarCoeff2
+254	tBodyGyroMagarCoeff3
+255	tBodyGyroMagarCoeff4
+256	tBodyGyroJerkMagmean
+257	tBodyGyroJerkMagstd
+258	tBodyGyroJerkMagmad
+259	tBodyGyroJerkMagmax
+260	tBodyGyroJerkMagmin
+261	tBodyGyroJerkMagsma
+262	tBodyGyroJerkMagenergy
+263	tBodyGyroJerkMagiqr
+264	tBodyGyroJerkMagentropy
+265	tBodyGyroJerkMagarCoeff1
+266	tBodyGyroJerkMagarCoeff2
+267	tBodyGyroJerkMagarCoeff3
+268	tBodyGyroJerkMagarCoeff4
+269	fBodyAccmeanX
+270	fBodyAccmeanY
+271	fBodyAccmeanZ
+272	fBodyAccstdX
+273	fBodyAccstdY
+274	fBodyAccstdZ
+275	fBodyAccmadX
+276	fBodyAccmadY
+277	fBodyAccmadZ
+278	fBodyAccmaxX
+279	fBodyAccmaxY
+280	fBodyAccmaxZ
+281	fBodyAccminX
+282	fBodyAccminY
+283	fBodyAccminZ
+284	fBodyAccsma
+285	fBodyAccenergyX
+286	fBodyAccenergyY
+287	fBodyAccenergyZ
+288	fBodyAcciqrX
+289	fBodyAcciqrY
+290	fBodyAcciqrZ
+291	fBodyAccentropyX
+292	fBodyAccentropyY
+293	fBodyAccentropyZ
+294	fBodyAccmaxIndsX
+295	fBodyAccmaxIndsY
+296	fBodyAccmaxIndsZ
+297	fBodyAccmeanFreqX
+298	fBodyAccmeanFreqY
+299	fBodyAccmeanFreqZ
+300	fBodyAccskewnessX
+301	fBodyAcckurtosisX
+302	fBodyAccskewnessY
+303	fBodyAcckurtosisY
+304	fBodyAccskewnessZ
+305	fBodyAcckurtosisZ
+306	fBodyAccbandsEnergy18
+307	fBodyAccbandsEnergy916
+308	fBodyAccbandsEnergy1724
+309	fBodyAccbandsEnergy2532
+310	fBodyAccbandsEnergy3340
+311	fBodyAccbandsEnergy4148
+312	fBodyAccbandsEnergy4956
+313	fBodyAccbandsEnergy5764
+314	fBodyAccbandsEnergy116
+315	fBodyAccbandsEnergy1732
+316	fBodyAccbandsEnergy3348
+317	fBodyAccbandsEnergy4964
+318	fBodyAccbandsEnergy124
+319	fBodyAccbandsEnergy2548
+320	fBodyAccbandsEnergy18
+321	fBodyAccbandsEnergy916
+322	fBodyAccbandsEnergy1724
+323	fBodyAccbandsEnergy2532
+324	fBodyAccbandsEnergy3340
+325	fBodyAccbandsEnergy4148
+326	fBodyAccbandsEnergy4956
+327	fBodyAccbandsEnergy5764
+328	fBodyAccbandsEnergy116
+329	fBodyAccbandsEnergy1732
+330	fBodyAccbandsEnergy3348
+331	fBodyAccbandsEnergy4964
+332	fBodyAccbandsEnergy124
+333	fBodyAccbandsEnergy2548
+334	fBodyAccbandsEnergy18
+335	fBodyAccbandsEnergy916
+336	fBodyAccbandsEnergy1724
+337	fBodyAccbandsEnergy2532
+338	fBodyAccbandsEnergy3340
+339	fBodyAccbandsEnergy4148
+340	fBodyAccbandsEnergy4956
+341	fBodyAccbandsEnergy5764
+342	fBodyAccbandsEnergy116
+343	fBodyAccbandsEnergy1732
+344	fBodyAccbandsEnergy3348
+345	fBodyAccbandsEnergy4964
+346	fBodyAccbandsEnergy124
+347	fBodyAccbandsEnergy2548
+348	fBodyAccJerkmeanX
+349	fBodyAccJerkmeanY
+350	fBodyAccJerkmeanZ
+351	fBodyAccJerkstdX
+352	fBodyAccJerkstdY
+353	fBodyAccJerkstdZ
+354	fBodyAccJerkmadX
+355	fBodyAccJerkmadY
+356	fBodyAccJerkmadZ
+357	fBodyAccJerkmaxX
+358	fBodyAccJerkmaxY
+359	fBodyAccJerkmaxZ
+360	fBodyAccJerkminX
+361	fBodyAccJerkminY
+362	fBodyAccJerkminZ
+363	fBodyAccJerksma
+364	fBodyAccJerkenergyX
+365	fBodyAccJerkenergyY
+366	fBodyAccJerkenergyZ
+367	fBodyAccJerkiqrX
+368	fBodyAccJerkiqrY
+369	fBodyAccJerkiqrZ
+370	fBodyAccJerkentropyX
+371	fBodyAccJerkentropyY
+372	fBodyAccJerkentropyZ
+373	fBodyAccJerkmaxIndsX
+374	fBodyAccJerkmaxIndsY
+375	fBodyAccJerkmaxIndsZ
+376	fBodyAccJerkmeanFreqX
+377	fBodyAccJerkmeanFreqY
+378	fBodyAccJerkmeanFreqZ
+379	fBodyAccJerkskewnessX
+380	fBodyAccJerkkurtosisX
+381	fBodyAccJerkskewnessY
+382	fBodyAccJerkkurtosisY
+383	fBodyAccJerkskewnessZ
+384	fBodyAccJerkkurtosisZ
+385	fBodyAccJerkbandsEnergy18
+386	fBodyAccJerkbandsEnergy916
+387	fBodyAccJerkbandsEnergy1724
+388	fBodyAccJerkbandsEnergy2532
+389	fBodyAccJerkbandsEnergy3340
+390	fBodyAccJerkbandsEnergy4148
+391	fBodyAccJerkbandsEnergy4956
+392	fBodyAccJerkbandsEnergy5764
+393	fBodyAccJerkbandsEnergy116
+394	fBodyAccJerkbandsEnergy1732
+395	fBodyAccJerkbandsEnergy3348
+396	fBodyAccJerkbandsEnergy4964
+397	fBodyAccJerkbandsEnergy124
+398	fBodyAccJerkbandsEnergy2548
+399	fBodyAccJerkbandsEnergy18
+400	fBodyAccJerkbandsEnergy916
+401	fBodyAccJerkbandsEnergy1724
+402	fBodyAccJerkbandsEnergy2532
+403	fBodyAccJerkbandsEnergy3340
+404	fBodyAccJerkbandsEnergy4148
+405	fBodyAccJerkbandsEnergy4956
+406	fBodyAccJerkbandsEnergy5764
+407	fBodyAccJerkbandsEnergy116
+408	fBodyAccJerkbandsEnergy1732
+409	fBodyAccJerkbandsEnergy3348
+410	fBodyAccJerkbandsEnergy4964
+411	fBodyAccJerkbandsEnergy124
+412	fBodyAccJerkbandsEnergy2548
+413	fBodyAccJerkbandsEnergy18
+414	fBodyAccJerkbandsEnergy916
+415	fBodyAccJerkbandsEnergy1724
+416	fBodyAccJerkbandsEnergy2532
+417	fBodyAccJerkbandsEnergy3340
+418	fBodyAccJerkbandsEnergy4148
+419	fBodyAccJerkbandsEnergy4956
+420	fBodyAccJerkbandsEnergy5764
+421	fBodyAccJerkbandsEnergy116
+422	fBodyAccJerkbandsEnergy1732
+423	fBodyAccJerkbandsEnergy3348
+424	fBodyAccJerkbandsEnergy4964
+425	fBodyAccJerkbandsEnergy124
+426	fBodyAccJerkbandsEnergy2548
+427	fBodyGyromeanX
+428	fBodyGyromeanY
+429	fBodyGyromeanZ
+430	fBodyGyrostdX
+431	fBodyGyrostdY
+432	fBodyGyrostdZ
+433	fBodyGyromadX
+434	fBodyGyromadY
+435	fBodyGyromadZ
+436	fBodyGyromaxX
+437	fBodyGyromaxY
+438	fBodyGyromaxZ
+439	fBodyGyrominX
+440	fBodyGyrominY
+441	fBodyGyrominZ
+442	fBodyGyrosma
+443	fBodyGyroenergyX
+444	fBodyGyroenergyY
+445	fBodyGyroenergyZ
+446	fBodyGyroiqrX
+447	fBodyGyroiqrY
+448	fBodyGyroiqrZ
+449	fBodyGyroentropyX
+450	fBodyGyroentropyY
+451	fBodyGyroentropyZ
+452	fBodyGyromaxIndsX
+453	fBodyGyromaxIndsY
+454	fBodyGyromaxIndsZ
+455	fBodyGyromeanFreqX
+456	fBodyGyromeanFreqY
+457	fBodyGyromeanFreqZ
+458	fBodyGyroskewnessX
+459	fBodyGyrokurtosisX
+460	fBodyGyroskewnessY
+461	fBodyGyrokurtosisY
+462	fBodyGyroskewnessZ
+463	fBodyGyrokurtosisZ
+464	fBodyGyrobandsEnergy18
+465	fBodyGyrobandsEnergy916
+466	fBodyGyrobandsEnergy1724
+467	fBodyGyrobandsEnergy2532
+468	fBodyGyrobandsEnergy3340
+469	fBodyGyrobandsEnergy4148
+470	fBodyGyrobandsEnergy4956
+471	fBodyGyrobandsEnergy5764
+472	fBodyGyrobandsEnergy116
+473	fBodyGyrobandsEnergy1732
+474	fBodyGyrobandsEnergy3348
+475	fBodyGyrobandsEnergy4964
+476	fBodyGyrobandsEnergy124
+477	fBodyGyrobandsEnergy2548
+478	fBodyGyrobandsEnergy18
+479	fBodyGyrobandsEnergy916
+480	fBodyGyrobandsEnergy1724
+481	fBodyGyrobandsEnergy2532
+482	fBodyGyrobandsEnergy3340
+483	fBodyGyrobandsEnergy4148
+484	fBodyGyrobandsEnergy4956
+485	fBodyGyrobandsEnergy5764
+486	fBodyGyrobandsEnergy116
+487	fBodyGyrobandsEnergy1732
+488	fBodyGyrobandsEnergy3348
+489	fBodyGyrobandsEnergy4964
+490	fBodyGyrobandsEnergy124
+491	fBodyGyrobandsEnergy2548
+492	fBodyGyrobandsEnergy18
+493	fBodyGyrobandsEnergy916
+494	fBodyGyrobandsEnergy1724
+495	fBodyGyrobandsEnergy2532
+496	fBodyGyrobandsEnergy3340
+497	fBodyGyrobandsEnergy4148
+498	fBodyGyrobandsEnergy4956
+499	fBodyGyrobandsEnergy5764
+500	fBodyGyrobandsEnergy116
+501	fBodyGyrobandsEnergy1732
+502	fBodyGyrobandsEnergy3348
+503	fBodyGyrobandsEnergy4964
+504	fBodyGyrobandsEnergy124
+505	fBodyGyrobandsEnergy2548
+506	fBodyAccMagmean
+507	fBodyAccMagstd
+508	fBodyAccMagmad
+509	fBodyAccMagmax
+510	fBodyAccMagmin
+511	fBodyAccMagsma
+512	fBodyAccMagenergy
+513	fBodyAccMagiqr
+514	fBodyAccMagentropy
+515	fBodyAccMagmaxInds
+516	fBodyAccMagmeanFreq
+517	fBodyAccMagskewness
+518	fBodyAccMagkurtosis
+519	fBodyBodyAccJerkMagmean
+520	fBodyBodyAccJerkMagstd
+521	fBodyBodyAccJerkMagmad
+522	fBodyBodyAccJerkMagmax
+523	fBodyBodyAccJerkMagmin
+524	fBodyBodyAccJerkMagsma
+525	fBodyBodyAccJerkMagenergy
+526	fBodyBodyAccJerkMagiqr
+527	fBodyBodyAccJerkMagentropy
+528	fBodyBodyAccJerkMagmaxInds
+529	fBodyBodyAccJerkMagmeanFreq
+530	fBodyBodyAccJerkMagskewness
+531	fBodyBodyAccJerkMagkurtosis
+532	fBodyBodyGyroMagmean
+533	fBodyBodyGyroMagstd
+534	fBodyBodyGyroMagmad
+535	fBodyBodyGyroMagmax
+536	fBodyBodyGyroMagmin
+537	fBodyBodyGyroMagsma
+538	fBodyBodyGyroMagenergy
+539	fBodyBodyGyroMagiqr
+540	fBodyBodyGyroMagentropy
+541	fBodyBodyGyroMagmaxInds
+542	fBodyBodyGyroMagmeanFreq
+543	fBodyBodyGyroMagskewness
+544	fBodyBodyGyroMagkurtosis
+545	fBodyBodyGyroJerkMagmean
+546	fBodyBodyGyroJerkMagstd
+547	fBodyBodyGyroJerkMagmad
+548	fBodyBodyGyroJerkMagmax
+549	fBodyBodyGyroJerkMagmin
+550	fBodyBodyGyroJerkMagsma
+551	fBodyBodyGyroJerkMagenergy
+552	fBodyBodyGyroJerkMagiqr
+553	fBodyBodyGyroJerkMagentropy
+554	fBodyBodyGyroJerkMagmaxInds
+555	fBodyBodyGyroJerkMagmeanFreq
+556	fBodyBodyGyroJerkMagskewness
+557	fBodyBodyGyroJerkMagkurtosis
+558	angletBodyAccMeangravity
+559	angletBodyAccJerkMeangravityMean
+560	angletBodyGyroMeangravityMean
+561	angletBodyGyroJerkMeangravityMean
+562	angleXgravityMean
+563	angleYgravityMean
+564	angleZgravityMean
